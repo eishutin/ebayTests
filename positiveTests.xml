@@ -1,0 +1,33 @@
+<suite name="PositiveTests" verbose = "1">
+    <test name = "SearchTest">
+        <classes>
+            <class name = "tests.SearchTest">
+                <methods>
+                    <include name="checkThatProductsHeaderContainsSearchRequest"/>
+                    <include name="checkThatYouCanGoToOtherPagesFromAllCategoriesMenuInSearchLine"/>
+                    <include name="checkThatProductsPriceInsideLimits"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name = "CartTest">
+        <classes>
+            <class name="tests.CartTest">
+                <methods>
+                    <include name="checkThatInEmptyCartNoProducts"/>
+                    <include name = "checkRemotingProductFromCart"/>
+                    <include name = "checkThatAddedToCartProductIsInsideCart"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name = "MainIconTest">
+        <classes>
+            <class name = "tests.MainIconTest">
+                <methods>
+                    <include name = "checkThatClickOnTheMainIconReturnYouToTheHomePage"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
